@@ -1,7 +1,9 @@
-project(
-  test_cJSON
-  VERSION 1.0.0
-  DESCRIPTION "test_cJSON")
+#[[
+# Author : KeeneChen
+# Date   : 2023.09.04-11:50:36
+]]
+
+project(test_cJSON DESCRIPTION "test_cJSON")
 
 add_executable(test_cJSON test_cJSON.c)
 target_link_libraries(test_cJSON cJSON)
