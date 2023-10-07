@@ -79,6 +79,11 @@ endmacro()
 
 # >>> debug information >>>
 macro(enable_kc_debug)
+  # 添加检查头文件宏
+  include(CheckIncludeFile)
+  include(CheckIncludeFiles)
+  include(CheckSymbolExists)
+
   # 设置语言标准
   set(CMAKE_C_STANDARD 11)
   set(CMAKE_C_STANDARD_REQUIRED True)
